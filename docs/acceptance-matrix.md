@@ -1,6 +1,6 @@
 # R01—R12 验收矩阵
 
-角色均为拟分工；A1/A2 真实身份与人工签署待登记。`已实现/待本次自动验证`的最终运行结果见[首次提交记录](submissions/first-submission.md)，自动检查不等于伙伴复核。
+角色均为拟分工；A1/A2 真实身份与人工签署待登记。本次模拟基线 14 项自动测试通过，运行结果见[首次提交记录](submissions/first-submission.md)，自动检查不等于伙伴复核。
 
 | Req | MUST 与 GWT | 自动检查/未来验收 | 证据路径 | 实现 / 验证 | 当前范围 |
 | --- | --- | --- | --- | --- | --- |
@@ -17,4 +17,4 @@
 | R11 | 运行中撤权无新动作 | CH01 两个时点与在途边界回归 | review/changes/，待批准后生成 | A2 / A1 | 未实现 |
 | R12 | 四状态评价/校准/签署 | K1—K6、实际交叉报告 | evaluator/、review/，未来记录 | A2 / A1 | 未实现 |
 
-当前测试文件：`eval/test_baseline.py`；命令：`python -m unittest discover -s eval -v`。公开模拟证据索引将放在 `evidence/manifest.json`，不能据此将整张学期矩阵标成 PASS。
+当前测试文件：`eval/test_baseline.py`；命令：`python -m unittest discover -s eval -v`。公开模拟[证据索引](../evidence/manifest.json)已提交，不能据此将整张学期矩阵标成 PASS。

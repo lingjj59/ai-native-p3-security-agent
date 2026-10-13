@@ -1,0 +1,32 @@
+{
+  "run_id": "run-c80eee6d00924c988d313e967f910868",
+  "commit": "bb8a195fef96a7f445fb6e609e59286123b5e87f",
+  "working_tree_dirty_at_start": false,
+  "created_at": "2026-10-13T14:56:53.959691+00:00",
+  "contract_version": "p3-sim-contract-v0.1",
+  "registry_version": "p3-registry-v0.1",
+  "policy_version": "fixed-v0.1",
+  "fixture_id": "public-known-bad",
+  "fixture_version": "0.1",
+  "fixture_sha256": "bdae6be9f1abdc5d8b5b2c33915bb3aa3d77e7b22fe3fdb9c8a9ccf9f027ebee",
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26100-SP0"
+  },
+  "target_id": "teaching-docs-sim",
+  "source": "fixture_demo",
+  "evidence_level": "OBSERVED",
+  "model_id": null,
+  "prompt_version": null,
+  "model_calls": 0,
+  "tokens": 0,
+  "model_cost": 0,
+  "human_signoff": "pending",
+  "budgets": {
+    "max_attempts": 8,
+    "max_rounds": 8,
+    "logical_seconds": 90,
+    "concurrency": 1,
+    "retries": 0
+  }
+}

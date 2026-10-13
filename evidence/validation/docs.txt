@@ -1,0 +1,4 @@
+command: python scripts/check_docs.py
+source_commit: bb8a195fef96a7f445fb6e609e59286123b5e87f
+exit_code: 0
+PASS: 27 Markdown files; required files and local link targets exist

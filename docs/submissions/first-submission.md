@@ -28,6 +28,17 @@
 
 自动验证命令：`python -m unittest discover -s eval -v`、`python -m compileall -q src scripts eval`、`python scripts/check_docs.py`。正式输出保存在 `evidence/validation/`，本页不代替日志。三场景使用 `python scripts/run_demo.py --scenario <good|known-bad|timeout>`。
 
+### 本次实际验证
+
+源码冻结版本：`bb8a195fef96a7f445fb6e609e59286123b5e87f`。三个 run 启动时工作区均干净。此后只追加提交记录和原始证据，不更改该版本的运行事实。
+
+- [自动测试原始日志](../../evidence/validation/tests.txt)：14 项通过。
+- [编译检查](../../evidence/validation/compile.txt)、[文档检查](../../evidence/validation/docs.txt)：退出码均为 0。
+- [Good 报告](../../evidence/runs/run-6a25d5d180b5409488b43ed833283491/report.json)：实际执行 6 次，六项均 NOT_CONFIRMED。
+- [Known Bad 报告](../../evidence/runs/run-c80eee6d00924c988d313e967f910868/report.json)：实际执行 6 次，T02 CONFIRMED；[原始事件](../../evidence/runs/run-c80eee6d00924c988d313e967f910868/events.jsonl)含 DB 教学标记。
+- [Timeout 报告](../../evidence/runs/run-ff40a4025ee74d30849a61c4420de626/report.json)：实际执行 1 次，随后因预算耗尽停止，六项结论均不足。
+- [完整清单](../../evidence/manifest.json)：版本、run ID、验证日志哈希及场景汇总。强度为 fixture_demo/OBSERVED，人工签署仍 pending。
+
 ## C：反思（约 200 字）
 
 这次先把授权门、证据和停止条件写成可观察的规格，再完成模拟闭环。正常、越权和超时都留下原始响应，使报告能区分确认问题与证据不足。没有把模拟结果写成真实服务验收，也没有把 AI 生成当作两名成员的独立贡献。当前仍缺模型调度、评价器和运行中撤权；这些属于后续里程碑，不用占位代码宣称完成。遇到真实目标、预算或课程批准未知时，应停在已有模拟范围，登记负责人和确认节点。下一步由组员独立重跑、解释关键路径，并请教师确认题目与授权，再扩展本地服务。

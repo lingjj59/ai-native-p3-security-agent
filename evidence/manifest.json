@@ -1,0 +1,79 @@
+{
+  "submission": "first-submission-v0.1",
+  "source_commit": "bb8a195fef96a7f445fb6e609e59286123b5e87f",
+  "created_at": "2026-10-13T14:56:54.381525+00:00",
+  "source": "fixture_demo",
+  "evidence_level": "OBSERVED",
+  "human_signoff": "pending",
+  "validation": {
+    "tests.txt": {
+      "exit_code": 0,
+      "sha256": "4f0f8a54b14a24248d8a8c5c3aef3782f1f31ab17ad83b5ef58df078eb433515"
+    },
+    "compile.txt": {
+      "exit_code": 0,
+      "sha256": "0f84f3eecdb3c5c75210bb69480754a711efe3483c8a5abf1d4969a23b5cbd64"
+    },
+    "docs.txt": {
+      "exit_code": 0,
+      "sha256": "aedd900b27471b48a0bf62e68446255fc9272d197ad430d6f70709f225d5f2a6"
+    }
+  },
+  "runs": [
+    {
+      "scenario": "good",
+      "run_id": "run-6a25d5d180b5409488b43ed833283491",
+      "path": "evidence/runs/run-6a25d5d180b5409488b43ed833283491",
+      "actual_attempts": 6,
+      "stop_reason": "plan_finished",
+      "uncovered": [],
+      "conclusions": {
+        "T01": "NOT_CONFIRMED",
+        "T02": "NOT_CONFIRMED",
+        "T03": "NOT_CONFIRMED",
+        "T04": "NOT_CONFIRMED",
+        "T05": "NOT_CONFIRMED",
+        "T06": "NOT_CONFIRMED"
+      }
+    },
+    {
+      "scenario": "known-bad",
+      "run_id": "run-c80eee6d00924c988d313e967f910868",
+      "path": "evidence/runs/run-c80eee6d00924c988d313e967f910868",
+      "actual_attempts": 6,
+      "stop_reason": "plan_finished",
+      "uncovered": [],
+      "conclusions": {
+        "T01": "NOT_CONFIRMED",
+        "T02": "CONFIRMED",
+        "T03": "NOT_CONFIRMED",
+        "T04": "NOT_CONFIRMED",
+        "T05": "NOT_CONFIRMED",
+        "T06": "NOT_CONFIRMED"
+      }
+    },
+    {
+      "scenario": "timeout",
+      "run_id": "run-ff40a4025ee74d30849a61c4420de626",
+      "path": "evidence/runs/run-ff40a4025ee74d30849a61c4420de626",
+      "actual_attempts": 1,
+      "stop_reason": "execution_budget_exhausted",
+      "uncovered": [
+        "T01",
+        "T02",
+        "T03",
+        "T04",
+        "T05",
+        "T06"
+      ],
+      "conclusions": {
+        "T01": "INCONCLUSIVE",
+        "T02": "INCONCLUSIVE",
+        "T03": "INCONCLUSIVE",
+        "T04": "INCONCLUSIVE",
+        "T05": "INCONCLUSIVE",
+        "T06": "INCONCLUSIVE"
+      }
+    }
+  ]
+}

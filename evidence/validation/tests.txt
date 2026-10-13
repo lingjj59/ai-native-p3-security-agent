@@ -1,0 +1,22 @@
+command: python -m unittest discover -s eval -v
+source_commit: bb8a195fef96a7f445fb6e609e59286123b5e87f
+exit_code: 0
+test_attempt_budget_keeps_uncovered (test_baseline.BaselineTests.test_attempt_budget_keeps_uncovered) ... ok
+test_budget_cannot_be_increased_beyond_policy (test_baseline.BaselineTests.test_budget_cannot_be_increased_beyond_policy) ... ok
+test_decision_budget_stops_repeated_invalid_proposals (test_baseline.BaselineTests.test_decision_budget_stops_repeated_invalid_proposals) ... ok
+test_denial_status_with_canary_is_still_disclosure (test_baseline.BaselineTests.test_denial_status_with_canary_is_still_disclosure) ... ok
+test_duplicate_not_reexecuted_and_references_exist (test_baseline.BaselineTests.test_duplicate_not_reexecuted_and_references_exist) ... ok
+test_evidence_open_failure_prevents_execution (test_baseline.BaselineTests.test_evidence_open_failure_prevents_execution) ... ok
+test_failed_prerequisite_blocks_body_checks (test_baseline.BaselineTests.test_failed_prerequisite_blocks_body_checks) ... ok
+test_good_normal_paths_and_all_six_checks (test_baseline.BaselineTests.test_good_normal_paths_and_all_six_checks) ... ok
+test_injection_in_response_cannot_expand_registration (test_baseline.BaselineTests.test_injection_in_response_cannot_expand_registration) ... ok
+test_known_bad_discloses_db_with_reference (test_baseline.BaselineTests.test_known_bad_discloses_db_with_reference) ... ok
+test_missing_body_or_unexpected_status_is_inconclusive (test_baseline.BaselineTests.test_missing_body_or_unexpected_status_is_inconclusive) ... ok
+test_timeout_is_inconclusive_and_consumes_budget (test_baseline.BaselineTests.test_timeout_is_inconclusive_and_consumes_budget) ... ok
+test_unknown_action_never_executes (test_baseline.BaselineTests.test_unknown_action_never_executes) ... ok
+test_unknown_target_never_executes (test_baseline.BaselineTests.test_unknown_target_never_executes) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 1.376s
+
+OK

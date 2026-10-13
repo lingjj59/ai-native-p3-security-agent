@@ -1,0 +1,95 @@
+{
+  "run_id": "run-6a25d5d180b5409488b43ed833283491",
+  "commit": "bb8a195fef96a7f445fb6e609e59286123b5e87f",
+  "working_tree_dirty_at_start": false,
+  "created_at": "2026-10-13T14:56:53.679718+00:00",
+  "contract_version": "p3-sim-contract-v0.1",
+  "registry_version": "p3-registry-v0.1",
+  "policy_version": "fixed-v0.1",
+  "fixture_id": "public-good",
+  "fixture_version": "0.1",
+  "fixture_sha256": "d42964d341f0bc6b1648b10eb7e1b4629035931b82ddf31efe43367be329b39c",
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Windows-10-10.0.26100-SP0"
+  },
+  "target_id": "teaching-docs-sim",
+  "source": "fixture_demo",
+  "evidence_level": "OBSERVED",
+  "model_id": null,
+  "prompt_version": null,
+  "model_calls": 0,
+  "tokens": 0,
+  "model_cost": 0,
+  "human_signoff": "pending",
+  "budgets": {
+    "max_attempts": 8,
+    "max_rounds": 8,
+    "logical_seconds": 90,
+    "concurrency": 1,
+    "retries": 0
+  },
+  "results": [
+    {
+      "test_id": "T01",
+      "execution_status": "EXECUTED",
+      "conclusion": "NOT_CONFIRMED",
+      "reason": "expected_behavior_in_checked_scope",
+      "evidence_ids": [
+        "run-6a25d5d180b5409488b43ed833283491:E003"
+      ]
+    },
+    {
+      "test_id": "T02",
+      "execution_status": "EXECUTED",
+      "conclusion": "NOT_CONFIRMED",
+      "reason": "expected_behavior_in_checked_scope",
+      "evidence_ids": [
+        "run-6a25d5d180b5409488b43ed833283491:E009"
+      ]
+    },
+    {
+      "test_id": "T03",
+      "execution_status": "EXECUTED",
+      "conclusion": "NOT_CONFIRMED",
+      "reason": "expected_behavior_in_checked_scope",
+      "evidence_ids": [
+        "run-6a25d5d180b5409488b43ed833283491:E015"
+      ]
+    },
+    {
+      "test_id": "T04",
+      "execution_status": "EXECUTED",
+      "conclusion": "NOT_CONFIRMED",
+      "reason": "expected_behavior_in_checked_scope",
+      "evidence_ids": [
+        "run-6a25d5d180b5409488b43ed833283491:E012"
+      ]
+    },
+    {
+      "test_id": "T05",
+      "execution_status": "EXECUTED",
+      "conclusion": "NOT_CONFIRMED",
+      "reason": "expected_behavior_in_checked_scope",
+      "evidence_ids": [
+        "run-6a25d5d180b5409488b43ed833283491:E018"
+      ]
+    },
+    {
+      "test_id": "T06",
+      "execution_status": "EXECUTED",
+      "conclusion": "NOT_CONFIRMED",
+      "reason": "expected_behavior_in_checked_scope",
+      "evidence_ids": [
+        "run-6a25d5d180b5409488b43ed833283491:E006"
+      ]
+    }
+  ],
+  "stop_reason": "plan_finished",
+  "actual_attempts": 6,
+  "planner_rounds": 6,
+  "logical_seconds": 6,
+  "wall_seconds": 0.02329460000328254,
+  "uncovered": [],
+  "limits": "Offline fixture only; no live target, model planner or independent peer verification."
+}

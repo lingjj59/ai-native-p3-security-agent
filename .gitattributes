@@ -1,0 +1,5 @@
+* text=auto eol=lf
+# Preserve exact evidence bytes so checkout cannot invalidate SHA256.
+evidence/runs/** -text
+evidence/validation/** -text
+evidence/manifest.json -text
